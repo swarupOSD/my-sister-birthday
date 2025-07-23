@@ -114,8 +114,8 @@
   <img src="cat.gif" alt="cat" class="cat">
 
   <!-- 🔊 Audio -->
-  <audio id="birthdayMusic" preload="auto">
-    <source src="audio/birthday_song.mp3" type="audio/mpeg">
+  <audio id="birthdayMusic" loop>
+    <source src="https://raw.githubusercontent.com/swarupOSD/my-sister-birthday/main/birthday_song.mp3" type="audio/mpeg">
     Your browser does not support the audio tag.
   </audio>
 
@@ -130,9 +130,9 @@
       photo.style.display = 'block';
       message.style.display = 'block';
 
-      // Autoplay music when cake is clicked
+      // 🎵 Play music on first interaction (mobile-friendly)
       music.play().catch((e) => {
-        console.log("User gesture required on mobile:", e);
+        console.log("Mobile gesture required:", e);
       });
     });
   </script>
